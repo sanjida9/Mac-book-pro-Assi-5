@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mac-Book-Pro</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+  </head>
+   <body>
+    <section>
+      <div class="container px-4">
+        <div class="mt-4 row gx-5">
+          <div class="col">
+            <!-- image section -->
+            <div class="p-3">
+              <img src="images/mac.png" alt="" class="img-fluid" />
+            </div>
+          </div>
+          <div class="col">
+            <div class="p-3">
+              <h1>Customize your Blue 24-inch iMac with Apple M1 chip</h1>
+              <p>
+                The Apple M1 is an ARM-based system on a chip (SoC). It was
+                designed by Apple Inc. as a central processing unit (CPU) and
+                graphics processing unit (GPU) for its Macintosh computers and
+                iPad Pro tablets. It was inspired by their Apple A14 Bionic
+                chip.
+              </p>
+
+              <div>
+                <!-- Memory section -->
+                <div class="mt-5">
+                  <h5>Memory</h5>
+                  <button
+                    onclick="costMeasure('memory', 0);"
+                    type="button"
+                    class="btn btn-outline-dark"
+                  >
+                    8GB unified memory
+                  </button>
+                  <button
+                    onclick="costMeasure('memory', 180);"
+                    type="button"
+                    class="btn btn-outline-dark"
+                  >
+                    16GB unified memory
+                  </button>
+                </div>
+                <!-- Storage section -->
+                <div class="mt-5">
+                  <h5>Storage</h5>
+                  <button
+                    onclick="costMeasure('storage', 0);"
+                    type="button"
+                    class="btn btn-outline-dark"
+                  >
+                    256GB SSD storage
+                  </button>
+                  <button
+                    onclick="costMeasure('storage', 100);"
+                    type="button"
+                    class="btn btn-outline-dark"
+                  >
+                    512GB SSD storage
+                  </button>
+                  <button
+                    onclick="costMeasure('storage', 180);"
+                    type="button"
+                    class="btn btn-outline-dark"
+                  >
+                    1TB SSD storage
+                  </button>
+                </div>
+                <!-- Choose delivery option start -->
+                <div class="mt-5">
+                  <h5>Choose your delivery option</h5>
+                  <button
+                    onclick="costMeasure('delivery', 0);"
+                    type="button"
+                    class="btn btn-outline-dark mt-2"
+                  >
+                    Friday, Aug 25 FREE Prime Delivery
+                  </button>
+                  <button
+                    onclick="costMeasure('delivery', 20);"
+                    type="button"
+                    class="btn btn-outline-dark mt-2"
+                  >
+                    Friday, Aug 21 Delivery Charge $20
+                  </button>
+                </div>
+                <!-- Choose delivery option end -->
+                <div class="mt-5 col-6">
+                  <table class="table">
+                    <tbody>
+                      <tr>
+                        <th scope="row">Best Price</th>
+                        <th scope="row">$<span id="best-price">1299</span></th>
+                      </tr>
+                      <tr>
+                        <th scope="row">Extra Memory Cost</th>
+                        <th scope="row">$<span id="memory-cost">0</span></th>
+                      </tr>
+                      <tr>
+                        <th scope="row">Extra Storage Cost</th>
+                        <th scope="row">$<span id="storage-cost">0</span></th>
+                      </tr>
+                      <tr id="table-border">
+                        <th scope="row">Delivery Charge</th>
+                        <th scope="row">$<span id="delivery-cost">0</span></th>
+                        
+                      </tr>
+                      <b><hr></b>
+                      <tr>
+                        <th scope="row">Total Price</th>
+                        <th scope="row">$<span id="total-price">1299</span></th>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <!-- Promo code -->
+                  <h6>Add Promo Code</h6>
+                  <input type="text" id="promo-code" value="" />
+                  <button id="apply-button" type="button" class="btn btn-danger mt-2">
+                    Apply
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr id="border" />
+    <footer>
+      <h2 class="mt-3 text-center">
+        Total:$<span id="final-total">1299</span>
+      </h2>
+    </footer>
+    <!--Custom Js  -->
+    <script src="script.js"></script>
+  </body>
+</html>
+</html>
